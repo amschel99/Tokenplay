@@ -11,7 +11,7 @@ function Store() {
       <DefaultLayout>
         <Navbar />
         <div className="w-screen h-screen overflow-y-scroll flex flex-col">
-          <h1 className="text-black text-xl ml-6 pt-4 pb-4">Lacent Store</h1>
+          <h1 className="text-black text-xl ml-6 pt-4 pb-4">TokenPlay Store</h1>
           <div className="flex flex-wrap mb-[90px] gap-6 m-6 ">
             {Packages.map((item, i) => (
               <StoreCard key={i} item={item} />

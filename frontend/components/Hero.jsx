@@ -1,8 +1,7 @@
 import { token, plant } from "../assets/images";
 import Image from "next/image";
 import { useRouter } from "next/router";
-import { Link } from "react-router-dom";
-
+import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import { useAccount, useConnect, configureChains } from "wagmi";
 import { InjectedConnector } from "wagmi/connectors/injected";
@@ -49,10 +48,11 @@ const Hero = () => {
     
        </div>
           </div>
-          
+          <Link href="/dashboard">
           <button className="border-2 border-Accent text-Black px-[20px] lg:text-[16px] lg:px-[26px] py-[12px] rounded-[8px] text-[12px] font-bold hover-bg-Accent hover-text-white">
             Learn More
           </button>
+          </Link>
           
           
         </div>
