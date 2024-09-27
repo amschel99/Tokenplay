@@ -71,6 +71,23 @@ With TokenPlay, players not only enjoy the game but also **own the assets** they
 
 ---
 
+## Deployed Contract Details
+
+The `TokenFactory` contract has been successfully deployed on the Lisk Testnet. Below are the relevant details:
+
+- **Deployer Address**: `0x16707C7BE64E1e2A2f52a5dBDD888e70BFcE9bAc`
+- **Contract Address**: `0xDc886B5405F2B36748fF9F90e51b934d1fc74e4D`
+- **Transaction Hash**: `0x54596291f7b1aa5be10b5e368deefd79d56ea86554ae60dc7f1f623ef691e871`
+- **Verification Status**: Verified
+- **Verification URL**: [View on BlockScout](https://sepolia-blockscout.lisk.com/address/0xdc886b5405f2b36748ff9f90e51b934d1fc74e4d)
+
+### Notes
+
+- The contract has been deployed to network ID `4202`.
+- For further interactions, you can use the contract address listed above.
+
+
+
 ## 🔥 **Hackathon Submission**
 
 We’re thrilled to submit **TokenPlay** as part of the hackathon. Our mission is to revolutionize the way gamers and developers think about **in-game assets** and the **ownership economy**. With TokenPlay, we empower developers to tokenize, monetize, and offer **true ownership** of their in-game items.
