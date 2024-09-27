@@ -19,9 +19,9 @@ const Sidebar = () => {
         <Image
           src={logo}
           alt="logo"
-          className="w-[44px] h-[44px] object-contain"
+          className="w-[28px] h-[44px] object-contain"
         />
-        <h3 className="text-[24px] text-[#fff] font-bold">Lacent</h3>
+        <h3 className="text-[24px] text-[#fff] font-bold">TokenPlay</h3>
       </div>
 
       <div className="flex flex-col space-y-[14px] items-center py-[54px]">
