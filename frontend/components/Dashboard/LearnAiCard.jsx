@@ -17,11 +17,10 @@ const LearnAiCard = () => {
       <div className="flex items-center justify-between w-full ">
         <div className="flex flex-col items-start space-y-[16px]">
           <span className="text-[20px] font-semibold text-Black">
-            Learn faster with AI
+            Earn in-Game Assets
           </span>
           <p className="text-[12px] text-Black font-normal w-[274px]">
-            Enhance your language skills by learning a language with the help of
-            AI
+            
           </p>
         </div>
         <Image

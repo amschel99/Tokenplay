@@ -27,7 +27,7 @@ export const FlowProvider = ({ children }) => {
 
   useEffect(() => {
  
-    const connectToStarknet = async () => {
+    const connectToLisk = async () => {
     
       const { wallet } = await connect( { modalMode: "neverAsk" } )
     
@@ -38,7 +38,7 @@ export const FlowProvider = ({ children }) => {
       }
     };
     
-    connectToStarknet();
+    connectToLisk();
   }, [])
 
   const connectWallet = async () => {

@@ -18,14 +18,14 @@ const DahboardRight = () => {
         <div className="flex mt-6 items-center justify-between">
           <div className="flex flex-col items-start">
             <h3 className="text-[16px] font-medium text-Black">
-              Available mentors
+              Available Games
             </h3>
             <p className="text-[14px] w-[300px] font-normal text-Grey">
-              Book a language mentor to fast track your learning
+             Play the Game
             </p>
           </div>
           <div className="flex  items-center space-x-[9px]">
-            <span>See all mentors</span>
+            <span>See all Games</span>
             <ChevronRightIcon className="w-[16px] h-[16px] object-contain" />
           </div>
         </div>

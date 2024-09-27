@@ -24,9 +24,9 @@ import {
 
 export const SidebarTab = [
   {
-    name: "Learn",
+    name: "Play",
     icons: HomeIcon,
-    active: "learn",
+    active: "play",
     route: "/dashboard",
   },
   {
@@ -41,14 +41,14 @@ export const SidebarTab = [
     active: "community",
     route: "/communities",
   },
+  // {
+  //   name: "Tokens",
+  //   icons: ChipIcon,
+  //   active: "test",
+  //   route: "/aichat",
+  // },
   {
-    name: "Learn with AI",
-    icons: ChipIcon,
-    active: "test",
-    route: "/aichat",
-  },
-  {
-    name: "Store",
+    name: "Marketplace",
     icons: ArchiveIcon,
     active: "chat",
     route: "/store",

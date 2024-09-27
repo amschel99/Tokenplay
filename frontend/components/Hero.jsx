@@ -1,6 +1,8 @@
 import { token, plant } from "../assets/images";
 import Image from "next/image";
 import { useRouter } from "next/router";
+import { Link } from "react-router-dom";
+
 import React, { useEffect, useState } from "react";
 import { useAccount, useConnect, configureChains } from "wagmi";
 import { InjectedConnector } from "wagmi/connectors/injected";
@@ -42,12 +44,17 @@ const Hero = () => {
         <div className="flex items-center space-x-7  md:self-start md:text-start">
           <div>
       <div>
+     
         <button onClick={connectWallet} className="bg-Accent text-Black px-[20px] lg:text-[16px] lg:px-[26px] py-[12px] rounded-[8px] text-[12px] font-bold">{walletAddress ? walletAddress.slice(0, 9) : "connect Wallet"}</button>
-      </div>
+    
+       </div>
           </div>
+          
           <button className="border-2 border-Accent text-Black px-[20px] lg:text-[16px] lg:px-[26px] py-[12px] rounded-[8px] text-[12px] font-bold hover-bg-Accent hover-text-white">
             Learn More
           </button>
+          
+          
         </div>
 
         <div className="flex items-center text-center  md:self-start md:text-start gap-[40px]">
@@ -65,18 +72,14 @@ const Hero = () => {
           </div>
         </div>
       </div>
-      <div className="flex flex-col relative items-center mt-[40px] md:w-[50%] md:mr-[85px]">
+      <div className="flex flex-col relative items-center mt-[60px] md:w-[40%] md:mr-[85px]">
         <Image
           src={token}
-          sizes="w-10 h-10"
+          sizes= "w-5 h-10"
           alt="main"
           className="w-[278.699px] h-[236px] md:w-[476px] lg:w-[678px] lg:h-[690px] md:h-[397.551px]  top-[197px] right-[97px] object-fill"
         />
-        <Image
-          src={plant}
-          alt="main"
-          className="w-[172px] h-[266px] md:h-[447px] lg:w-[400px] lg:h-[750px] object-fill absolute top-[0px] right-0"
-        />
+     
         <div className="flex flex-row w-full items-right justify-end text-Black text-right mt-6">
           <span className="text-[14px]  font-semibold">
             Powered by{" "}
