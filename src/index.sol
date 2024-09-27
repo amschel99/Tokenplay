@@ -14,7 +14,7 @@ contract TokenFactory {
     event NFTDeployed(address indexed nftAddress);
 
 
-    function deployPresaleContract(uint8 _maxPresaledAddresses)  returns (address) {
+    function deployPresaleContract(uint8 _maxPresaledAddresses) public   returns (address) {
      
         Presale newPresale = new Presale(_maxPresaledAddresses);
         DeployedPresaleContracts[msg.sender] = address(newPresale);

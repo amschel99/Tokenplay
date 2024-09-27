@@ -11,11 +11,15 @@ contract Tokenize is ERC721Enumerable, Ownable {
 
     Presale presale;
 
+uint256  public _price;
+uint256 public maxTokenIds;
 
     uint256 public reservedTokens;
     uint256 public reservedTokensClaimed = 0;
 
-    constructor (address PresaleContract, uint256 _price, uint256 maxTokenIds, string memory _name, string memory _symbol) ERC721(_name, _symbol) Ownable(msg.sender) {
+    constructor (address PresaleContract, uint256 price, uint256 _maxTokenIds, string memory _name, string memory _symbol) ERC721(_name, _symbol) Ownable(msg.sender) {
+        _price=price;
+        maxTokenIds=_maxTokenIds;
         presale = Presale(PresaleContract);
         reservedTokens = presale.maxPresaledAddresses();
     }
@@ -25,7 +29,7 @@ contract Tokenize is ERC721Enumerable, Ownable {
         require(totalSupply() + reservedTokens - reservedTokensClaimed < maxTokenIds, "EXCEEDED_MAX_SUPPLY");
 
         // If user is part of the presale, make sure there is still reserved tokens left
-        if (presale.presaledAddresses(msg.sender) && msg.value < _price) {
+        if (presale.PresaledAddresses(msg.sender) && msg.value < _price) {
             // Make sure user doesn't already own an NFT
             require(balanceOf(msg.sender) == 0, "ALREADY_OWNED");
             reservedTokensClaimed += 1;
